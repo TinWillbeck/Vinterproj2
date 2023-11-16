@@ -2,5 +2,6 @@
 {
     public string name;
     public int value;
-    public bool isDealt = false;
+    public string color;
+    // public bool isDealt = false;
 }
