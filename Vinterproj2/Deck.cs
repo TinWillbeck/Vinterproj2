@@ -32,7 +32,11 @@ public class Deck
     public Card Draw()
     {
         int i = generator.Next(cards.Count);
-   
-        return cards[i];
+
+        Card c = cards[i];
+        Console.WriteLine(c.value);
+        Console.WriteLine(c.color);
+        cards.Remove(cards[i]);
+        return c;
     }
 }

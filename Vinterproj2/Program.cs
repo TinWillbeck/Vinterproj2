@@ -1,10 +1,10 @@
 ﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-Deck deck = new();
+
+Hand player = new();
 
 
-deck.PrintCards();
 
-deck.Draw();
+// deck.Draw();
 
 Console.ReadLine();
