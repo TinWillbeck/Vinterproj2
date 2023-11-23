@@ -3,6 +3,7 @@
 
 Hand player = new();
 
+player.printHand();
 
 
 // deck.Draw();

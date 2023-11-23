@@ -34,8 +34,8 @@ public class Deck
         int i = generator.Next(cards.Count);
 
         Card c = cards[i];
-        Console.WriteLine(c.value);
-        Console.WriteLine(c.color);
+        // Console.WriteLine(c.value);
+        // Console.WriteLine(c.color);
         cards.Remove(cards[i]);
         return c;
     }
