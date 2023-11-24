@@ -6,7 +6,7 @@ public class Deck
     Random generator = new Random();
     public Deck()
     {
-        string[] colors = {"clubs", "hearts", "spades", "diamonds"};
+        string[] colors = {"♣", "♥", "♠", "♦"};
         foreach (var color in colors)
         {
             for (int i = 0; i < 13; i++)
