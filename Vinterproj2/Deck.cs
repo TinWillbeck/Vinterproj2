@@ -14,7 +14,12 @@ public class Deck
                 Card c1 = new Card();
                 c1.color = color;
                 c1.value = i+1;
+                if (c1.value > 11)
+                {
+                    c1.value = 10;
+                }
                 cards.Add(c1);
+
             }   
         }
     }
