@@ -39,7 +39,10 @@ while (player.handSum <=21 && action != "done")
 
 }
 
-
+if(player.handSum > 21)
+{
+    Console.WriteLine("You lost;");
+}
 
 Console.WriteLine("House starting hand");
 house.printHand();
@@ -47,7 +50,7 @@ house.printHand();
 Console.WriteLine("Press enter to proceed");
 Console.ReadLine();
 // loopen körs så länge husets summa kort är under 17 eller är under spelarens summa kort och spelarens summa kort är under 21
-while (house.handSum <= 17 || house.handSum < player.handSum)
+while (house.handSum <= 17 || house.handSum < player.handSum && player.handSum <= 21)
 {
     Console.Clear();
     house.Hit();
@@ -62,6 +65,14 @@ while (house.handSum <= 17 || house.handSum < player.handSum)
 if (house.handSum > 21)
 {
     Console.WriteLine("House lost!");
+}
+else if (house.handSum > player.handSum)
+{
+    Console.WriteLine("House won!");
+}
+else
+{
+    Console.WriteLine("You won!");
 }
 
 Console.ReadLine();
