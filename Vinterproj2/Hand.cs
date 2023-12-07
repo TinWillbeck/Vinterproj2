@@ -16,9 +16,15 @@
         hand.Add(deck.Draw());
     }
 
+    public void Split()
+    {
+
+    }
+
     public void Done()
     {
         Console.WriteLine($"Final card sum: {handSum}");
+        
     }
 
     public void printHand()

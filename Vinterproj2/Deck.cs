@@ -1,5 +1,4 @@
-﻿
-public class Deck
+﻿public class Deck
 {
     List<Card> cards = new();
 
@@ -19,7 +18,6 @@ public class Deck
                     c1.value = 10;
                 }
                 cards.Add(c1);
-
             }   
         }
     }
