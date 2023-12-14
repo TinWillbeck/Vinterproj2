@@ -15,16 +15,16 @@
             // loopen körs 14 gånger, skapar ett kort med ökande värde varje gång
             for (int i = 0; i < 13; i++)
             {
-                Card c1 = new Card();
-                c1.color = color;
-                c1.value = i+1;
+                Card c = new Card();
+                c.color = color;
+                c.value = i+1;
                 // om kortets värde är över 11 sätts värdet till 10
-                if (c1.value > 11)
+                if (c.value > 11)
                 {
-                    c1.value = 10;
+                    c.value = 10;
                 }
                 // lägger till det skapade kortet i listan med kort
-                cards.Add(c1);
+                cards.Add(c);
             }   
         }
     }

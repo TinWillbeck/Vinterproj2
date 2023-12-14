@@ -9,7 +9,6 @@
     {
         hand.Add(deck.Draw());
         hand.Add(deck.Draw());
-        
     }
 
     // metoden lägger till ett kort
@@ -21,16 +20,18 @@
     
     public void Split()
     {
-        // kolla vilka kort som finns i listan hand
+        // kolla så det bara finns två kort i handen
+        // kolla så korten har samma värde
         // separera korten i två olika listor
-        // vet inte riktigt hur draget fungerar i riktig blackjack
+        // fixa så man först spelar klart med ena handen och sen spelar med andra
+
     }
 
     // metoden skriver ut summan kort
     public void Done()
     {
         Console.WriteLine($"Final card sum: {handSum}");
-        
+
     }
 
     // metoden skriver ut handen och uppdaterar summan kort
